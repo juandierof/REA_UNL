@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de Prueba</title>
 
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#084298;
+            padding:12px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffd43b;
+        }
+
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+            background:white;
+        }
+
+        .hero h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin:auto;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            background:#0d6efd;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:8px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#084298;
+        }
+
+        .contenedor{
+            width:90%;
+            margin:40px auto;
+        }
+
+        .tarjetas{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            justify-content:center;
+        }
+
+        .tarjeta{
+            background:white;
+            width:300px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,.15);
+            text-align:center;
+        }
+
+        .tarjeta h3{
+            color:#0d6efd;
+            margin-bottom:10px;
+        }
+
+        .tarjeta p{
+            line-height:1.5;
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+            .tarjetas{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Mi Página Web de Prueba</h1>
+    <p>Ejemplo desarrollado con HTML y CSS</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Galería</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section class="hero">
+    <h2>Bienvenido</h2>
+    <p>
+        Esta es una página de ejemplo creada únicamente para realizar pruebas.
+        Puedes modificar el contenido, los colores y el diseño según tus necesidades.
+    </p>
+
+    <a href="#" class="btn">Más información</a>
+</section>
+
+<div class="contenedor">
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>HTML5</h3>
+            <p>
+                Estructura el contenido de una página web mediante etiquetas semánticas.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>CSS3</h3>
+            <p>
+                Permite diseñar páginas modernas utilizando colores, efectos y animaciones.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>JavaScript</h3>
+            <p>
+                Agrega interactividad, validaciones y comportamiento dinámico a la página.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 - Página Web de Prueba | Creada con HTML y CSS</p>
+</footer>
+
+</body>
+</html>
